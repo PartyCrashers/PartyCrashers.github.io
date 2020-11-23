@@ -9980,7 +9980,7 @@ h3 {
   }
 }
 .about-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/party2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/party2.jpg);
   background-position: 50% 55%;
 }
 .page-section {
@@ -10117,7 +10117,7 @@ h3 {
   }
 }
 .masthead-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/party1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/party1.jpg);
   background-position: 50% 30%;
 }
 .masthead {
