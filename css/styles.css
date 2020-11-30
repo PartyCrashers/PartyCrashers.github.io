@@ -64,9 +64,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #fff;
   text-align: left;
-  background-color: #fff;
+  background-color: #212529;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2439,28 +2439,28 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #fff;
   background-color: #1abc9c;
-  border-color: #1abc9c;
+  border-color: #c254d6;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #159a80;
-  border-color: #148f77;
+  border-color: #a94aba;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
   background-color: #159a80;
-  border-color: #148f77;
+  border-color: #a94aba;
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
   background-color: #1abc9c;
-  border-color: #1abc9c;
+  border-color: #c254d6;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #148f77;
-  border-color: #12846e;
+  border-color: #a94aba;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
@@ -9785,7 +9785,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #2c3e50 !important;
+  color: #fff !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9980,8 +9980,10 @@ h3 {
   }
 }
 .about-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/party2.jpg');
-  background-position: 50% 55%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/party2.jpg');
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .page-section {
   padding: 6rem 0;
@@ -10008,9 +10010,9 @@ h3 {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: rgb(255, 129, 238);
   border-radius: 1rem;
-  border-color: #2c3e50 !important;
+  border-color:rgb(255, 129, 238) !important;
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -10019,14 +10021,14 @@ h3 {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #2c3e50 !important;
+  color: rgb(255, 129, 238) !important;
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: rgb(255, 129, 238);
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff !important;
+  color: rgb(255, 129, 238) !important;
 }
 
 .btn-xl {
@@ -10117,8 +10119,10 @@ h3 {
   }
 }
 .masthead-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/party1.jpg');
-  background-position: 50% 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/party1.jpg');
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .masthead {
   padding-top: calc(6rem + 74px);
@@ -10235,7 +10239,7 @@ h3 {
 }
 
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #744c7c;
 }
 
 .footer {
