@@ -10120,7 +10120,7 @@ h3 {
 }
 .masthead-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/party1.jpg');
-  background-position: 50% 70%;
+  background-position: 0% 70%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
