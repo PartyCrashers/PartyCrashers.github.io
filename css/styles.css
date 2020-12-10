@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #223659;
+  background-color: #0E3963;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -3961,8 +3961,24 @@ input[type=button].btn-block {
   padding: 0.5rem 1rem;
 }
 
+@media(max-width: 1321px) {
+.if200 {
+    display: inline;
+}
 .top200 {
     position: absolute;
+    visibility: hidden;
+}
+}
+
+@media(min-width: 1321px) {
+.if200 {
+    display: none;
+}
+.top200 {
+    position: absolute;
+    visibility: visible;
+}
 }
 
 .navbar .container,
@@ -9985,7 +10001,7 @@ h3 {
   }
 }
 .about-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/party2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../assets/party2.jpg');
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10124,7 +10140,7 @@ h3 {
   }
 }
 .masthead-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/party1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../assets/party1.jpg');
   background-position: 0% 70%;
   background-repeat: no-repeat;
   background-attachment: fixed;
