@@ -30,6 +30,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded
+                            js-scroll-trigger" href="#sale">Featured Sale</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded
                                 js-scroll-trigger" href="#portfolio">Packages</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded
                                 js-scroll-trigger" href="#about">About</a></li>
@@ -52,13 +54,37 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Event Planning Services</p>
             </div>
         </header>
+        <!-- Holiday (?) Sale -->
+        <section class="holiday-sale" id="sale">
+            <div class="container">
+                <!-- Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Holiday Sale</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Columns -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 holiday-item">
+                        <h2>img placeholder</h2>
+                    </div>
+                    <div class="col-lg-6 holiday-item">
+                        <p class="lead">
+                            This is a test. This package,.,........
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -67,7 +93,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -80,12 +106,12 @@
                                 Boom Package. Don't fret about
                                 choosing how you want the party to
                                 look; we have a variety of preset
-                                themes to choose from allowing for
+                                themes to choose from, allowing for
                                 you to choose how you want your
                                 party to be with as little hassle as
                                 possible.</p>
-                            <a href="https://portal.veinternational.org/buybuttons/us011873/btn/boom-package-3549873/"
-                               class="btn btn-primary" style="background-color: #d55eeb;" role="button">Purchase</a>
+                            <a class="btn btn-primary" id="boom-button" style="background-color: #d55eeb;" role="button">View Details</a>
+                            <!-- href="https://portal.veinternational.org/buybuttons/us011873/btn/boom-package-3549873/" -->
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -97,8 +123,8 @@
                                 set up the catering for you. Coordinating
                                 the transport and arrival of your food has
                                 never been easier!</p>
-                            <a href="https://portal.veinternational.org/buybuttons/us011873/btn/smash-package-0384754/"
-                               class="btn btn-primary" style="background-color: #d55eeb;" role="button">Purchase</a>
+                            <a class="btn btn-primary" id="smash-button" style="background-color: #d55eeb;" role="button">View Details</a>
+                            <!-- href="https://portal.veinternational.org/buybuttons/us011873/btn/smash-package-0384754/" -->
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -111,13 +137,62 @@
                                 entertainment. You also gain access to
                                 premium themes and menus. Just sit back,
                                 relax, and enjoy the party.</p>
-                            <a href="https://portal.veinternational.org/buybuttons/us011873/btn/crashed-package-8573735/"
-                               class="btn btn-primary" style="background-color: #d55eeb;" role="button">Purchase</a>
+                            <a class="btn btn-primary" id="crashed-button" style="background-color: #d55eeb;" role="button">View Details</a>
+                            <!-- href="https://portal.veinternational.org/buybuttons/us011873/btn/crashed-package-8573735/" -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div id="boom-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-header-text">Boom Package</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <section class="theme cf">
+                        <p class="lead">Choose a theme: </p>
+                        <input type="radio" name="radio1" id="1" value="1" checked>
+                        <label for="1" class="1-label four col">Test1</label>
+
+                        <input type="radio" name="radio1" id="2" value="2">
+                        <label for="2" class="2-label four col">Test2</label>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div id="smash-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-header-text">Smash Package</h2>                    
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="crashed-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-header-text">Crashed Package</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+            </div>
+        </div>
+
         <!-- About Section-->
         <section class="page-section about-bg text-white mb-0" id="about">
             <div class="container">
@@ -126,7 +201,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
@@ -146,7 +221,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-heart "></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
@@ -214,8 +289,7 @@
                     <div class="col-sm-4 col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Disclaimer</h4>
                         <p class="lead mb-0">
-                            Party Crashers is a virtual online business
-                            through Virtual Enterprises International.
+                            Disclaimer: This Virtual Enterprise online store is for educational purposes only.  (2020-2021 – Party Crashers)
                         </p>
                     </div>
                     <!-- Footer image -->
