@@ -10309,7 +10309,7 @@ form .row:first-child .floating-label-form-group {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -10465,7 +10465,7 @@ form .row:first-child .floating-label-form-group {
   padding: 0 16px;
   max-width: 600px;
   width: 600px;
-  margin: 30px auto;
+  margin: 20px auto;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 600;
