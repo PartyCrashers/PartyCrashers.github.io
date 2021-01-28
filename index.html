@@ -404,7 +404,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Name</label>
@@ -437,6 +437,28 @@
                             <div id="success"></div>
                             <div class="form-group"><button class="btn btn-primary btn-xl" style="background-color:
                                     #d55eeb" id="sendMessageButton" type="submit">Send</button></div>
+                        </form> -->
+
+                        <form action="https://formspree.io/f/xbjpwvaz" method="POST">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email Address" required="required">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-xl" style="background-color: #d55eeb; margin-top: 1rem;">Send</button>
                         </form>
                     </div>
                 </div>
