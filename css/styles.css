@@ -10471,6 +10471,7 @@ form .row:first-child .floating-label-form-group {
   width: 680px;
   margin: 20px auto;
   margin-bottom: 0;
+  margin-top: 0;
   font-size: 18px;
   font-weight: 600;
   line-height: 36px;
