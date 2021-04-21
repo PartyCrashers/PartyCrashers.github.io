@@ -10388,6 +10388,10 @@ form .row:first-child .floating-label-form-group {
     margin: 10px 0;
     position: relative;
 }
+.inputGroup p {
+    max-width: 600px;
+    margin: auto;
+}
 .inputGroup label {
       padding: 12px 30px;
       width: 100%;
@@ -10401,7 +10405,7 @@ form .row:first-child .floating-label-form-group {
       overflow: hidden;
 }      
 .inputGroup label:before {
-        width: 10px;
+        width: 12px;
         height: 10px;
         border-radius: 50%;
         content: '';
@@ -10463,8 +10467,8 @@ form .row:first-child .floating-label-form-group {
 
 .form {
   padding: 0 16px;
-  max-width: 600px;
-  width: 600px;
+  max-width: 680px;
+  width: 680px;
   margin: 20px auto;
   margin-bottom: 0;
   font-size: 18px;
